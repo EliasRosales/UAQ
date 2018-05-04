@@ -19,7 +19,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="News Feed"
-            android:layout_below="@id/button1"
             android:layout_gravity="center_horizontal"
             android:icon="@drawable/uaq" />
         <TextView

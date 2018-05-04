@@ -8,6 +8,7 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionMenu;
@@ -15,12 +16,15 @@ import com.github.clans.fab.FloatingActionMenu;
 public class alumnos extends AppCompatActivity {
 
     FloatingActionMenu menu;
-    WebView webView;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alumnos);
+
+        textView= findViewById(R.id.titulo);
+        textView.setText("Portal Alumnos");
 
         menu = findViewById(R.id.menu);
         menu.setClosedOnTouchOutside(true);

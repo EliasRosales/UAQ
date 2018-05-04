@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.github.clans.fab.FloatingActionMenu;
@@ -11,11 +12,15 @@ import com.github.clans.fab.FloatingActionMenu;
 public class Acerca extends AppCompatActivity {
 
     FloatingActionMenu menu;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acerca);
+
+        textView= findViewById(R.id.titulo);
+        textView.setText("Acerca de ...");
 
         menu = findViewById(R.id.menu);
         menu.setClosedOnTouchOutside(true);
