@@ -39,8 +39,18 @@ public class alumnos extends AppCompatActivity {
         Intent i = new Intent(alumnos.this, docentes.class);
         startActivity(i);
     }
+
     public void Acerca(View view){
         Intent i = new Intent(alumnos.this, Acerca.class);
         startActivity(i);
     }
+
+    public void Facultades(View view){
+        Toast.makeText(this,"Esta ventana se encontrara proximamnete!! ;)", Toast.LENGTH_SHORT).show();
+    }
+
+    public void Contacto(View view){
+        Toast.makeText(this,"Esta ventana se encontrara proximamnete!! ;)", Toast.LENGTH_SHORT).show();
+    }
+
 }

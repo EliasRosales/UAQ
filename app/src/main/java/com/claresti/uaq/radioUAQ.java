@@ -39,8 +39,18 @@ public class radioUAQ extends AppCompatActivity {
         Intent i = new Intent(radioUAQ.this, docentes.class);
         startActivity(i);
     }
+
     public void Acerca(View view){
         Intent i = new Intent(radioUAQ.this, Acerca.class);
         startActivity(i);
     }
+
+    public void Facultades(View view){
+        Toast.makeText(this,"Esta ventana se encontrara proximamnete!! ;)", Toast.LENGTH_SHORT).show();
+    }
+
+    public void Contacto(View view){
+        Toast.makeText(this,"Esta ventana se encontrara proximamnete!! ;)", Toast.LENGTH_SHORT).show();
+    }
+
 }

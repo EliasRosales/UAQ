@@ -3,4 +3,11 @@
     <color name="colorPrimary">#303F9F</color>
     <color name="colorPrimaryDark">#3F51B5</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="alumnos" >#01AED8</color>
+    <color name="docentes" >#0061A8</color>
+    <color name="tv" >#00A8A3</color>
+    <color name="radio" >#53B2CE</color>
+    <color name="acerca" >#3376AB</color>
+    <color name="facultades" >#7359B5</color>
+    <color name="contacto" >#EE786F</color>
 </resources>
