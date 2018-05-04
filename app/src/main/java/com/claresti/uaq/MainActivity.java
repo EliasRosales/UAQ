@@ -10,12 +10,15 @@ import com.github.clans.fab.FloatingActionMenu;
 
 public class MainActivity extends AppCompatActivity{
 
+
     FloatingActionMenu menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         menu = findViewById(R.id.menu);
         menu.setClosedOnTouchOutside(true);
