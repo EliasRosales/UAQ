@@ -17,7 +17,8 @@
             app:menu_fab_label="Menu"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            app:backgroundTint="@color/colorPrimary">
+            app:menu_colorNormal="@color/colorPrimary"
+            app:menu_colorPressed="@color/colorPrimaryDark">
 
             <com.github.clans.fab.FloatingActionButton
                 android:id="@+id/acerca"
