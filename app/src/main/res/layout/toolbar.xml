@@ -26,7 +26,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:layout_below="@id/img"
-            />
+            android:text=""/>
 
     </RelativeLayout>
 
