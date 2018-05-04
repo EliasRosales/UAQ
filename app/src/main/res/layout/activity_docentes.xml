@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".docentes">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu_fab_label="Menu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/acerca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Acerca..."
+                android:src="@drawable/menu"
+                android:onClick="Acerca"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/docentes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Portal Docentes"
+                android:src="@drawable/menu"
+                android:onClick="Docentes"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/alumnos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Portal Alumnos"
+                android:src="@drawable/menu"
+                android:onClick="Alumnos"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/radiouaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Radio UAQ"
+                android:src="@drawable/menu"
+                android:onClick="Ruaq"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/tvuaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="TV UAQ"
+                android:src="@drawable/menu"
+                android:onClick="Tvuaq"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
