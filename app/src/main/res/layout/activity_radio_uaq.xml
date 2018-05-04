@@ -9,6 +9,15 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <WebView
+            android:layout_below="@id/toolbar"
+            android:id="@+id/radio_uaq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
         <com.github.clans.fab.FloatingActionMenu
             android:id="@+id/menu"
