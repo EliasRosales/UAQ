@@ -6,138 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"/>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="News Feed"
-            android:icon="@drawable/alumnos" />
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="News Feed"
-            android:layout_below="@id/button1"
-            android:icon="@drawable/docentes" />
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="News Feed"
-            android:layout_below="@id/button2"
-            android:icon="@drawable/radio" />
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="News Feed"
-            android:layout_below="@id/button3"
-            android:icon="@drawable/television" />
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="News Feed"
-            android:layout_below="@id/button4"
-            android:icon="@drawable/acerca" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="News Feed"
-            android:layout_below="@id/button5"
-            android:icon="@drawable/contactb" />
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            />
 
 
-        <com.github.clans.fab.FloatingActionMenu
-            android:id="@+id/menu"
+        <TableLayout
+            android:id="@+id/table"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:menu_fab_label="Menu"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            app:menu_colorNormal="@color/colorPrimary"
-            app:menu_colorPressed="@color/colorPrimaryDark"
-            app:menu_icon="@drawable/menub">
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
 
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/acerca"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Acerca..."
-                android:src="@drawable/acercab"
-                android:onClick="Acerca"
-                app:fab_colorNormal="@color/acerca"/>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/btn_alumnos"
+                    android:text="Portal Alumnos"
+                    android:textColor="#fff"
+                    android:background="@color/alumnos"
+                    android:onClick="btnAlumnos"
+                    />
+                <Button
+                    android:id="@+id/btn_docentes"
+                    android:background="@color/docentes"
+                    android:text="Portal Docentes"
+                    android:textColor="#fff"
+                    android:onClick="btnDocentes"
+                    />
+            </TableRow>
 
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/docentes"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Portal Docentes"
-                android:src="@drawable/docentesb"
-                android:onClick="Docentes"
-                app:fab_colorNormal="@color/docentes"/>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/btn_tv_uaq"
+                    android:text="TV UAQ"
+                    android:textColor="#fff"
+                    android:background="@color/tv"
+                    android:onClick="btnTv"
+                    />
+                <Button
+                    android:id="@+id/btn_radio_uaq"
+                    android:text="Radio UAQ"
+                    android:textColor="#fff"
+                    android:background="@color/radio"
+                    android:onClick="btnRadio"
+                    />
+            </TableRow>
 
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/alumnos"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Portal Alumnos"
-                android:src="@drawable/alumnosb"
-                android:onClick="Alumnos"
-                app:fab_colorNormal="@color/alumnos"/>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal">
+                <Button
+                    android:id="@+id/btn_facultades"
+                    android:text="Facultades"
+                    android:textColor="#fff"
+                    android:background="@color/facultades"
+                    android:onClick="btnFacultades"
+                    />
+                <Button
+                    android:id="@+id/btn_acerca"
+                    android:text="Acerca de ..."
+                    android:textColor="#fff"
+                    android:background="@color/acerca"
+                    android:onClick="btnAcerca"
+                    />
+            </TableRow>
 
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/radiouaq"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Radio UAQ"
-                android:src="@drawable/radiob"
-                android:onClick="Ruaq"
-                app:fab_colorNormal="@color/radio"/>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                android:layout_span="2">
+                <Button
+                    android:id="@+id/btn_contacto"
+                    android:text="Contacto"
+                    android:textColor="#fff"
+                    android:background="@color/contacto"
+                    android:layout_weight="1"
+                    android:onClick="btnContacto"
+                    />
+            </TableRow>
+        </TableLayout>
 
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/tvuaq"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="TV UAQ"
-                android:src="@drawable/teleb"
-                android:onClick="Tvuaq"
-                app:fab_colorNormal="@color/tv"/>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
 
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/facultades"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Facultades"
-                android:src="@drawable/facultadesb"
-                android:onClick="Facultades"
-                app:fab_colorNormal="@color/facultades"/>
-
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/contacto"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Contacto"
-                android:src="@drawable/contactb"
-                android:onClick="Contacto"
-                app:fab_colorNormal="@color/contacto"/>
-
-
-
-
-
-        </com.github.clans.fab.FloatingActionMenu>
+            />
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_below="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo2"
+          />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
