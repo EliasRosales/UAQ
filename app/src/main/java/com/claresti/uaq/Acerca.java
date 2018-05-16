@@ -1,6 +1,7 @@
 package com.claresti.uaq;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -56,6 +57,12 @@ public class Acerca extends AppCompatActivity {
 
     public void Contacto(View view){
         Toast.makeText(this,"Esta ventana se encontrara proximamnete!! ;)", Toast.LENGTH_SHORT).show();
+    }
+
+    public void uaq(View view){
+        Uri uri = Uri.parse("http://www.uaq.mx");
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 
 }

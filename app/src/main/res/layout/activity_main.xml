@@ -7,15 +7,16 @@
     tools:context=".MainActivity">
 
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints">
+
         <include
             android:id="@+id/toolbar"
-            layout="@layout/toolbar"
-            />
+            layout="@layout/toolbar" />
 
 
         <TableLayout
@@ -23,82 +24,107 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar"
+            android:elevation="4dp"
             android:shrinkColumns="*"
-            android:stretchColumns="*" >
+            android:stretchColumns="*">
 
             <TableRow
-                android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal">
+
                 <Button
                     android:id="@+id/btn_alumnos"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/alumnos"
+                    android:onClick="btnAlumnos"
                     android:text="Portal Alumnos"
                     android:textColor="#fff"
-                    android:background="@color/alumnos"
-                    android:onClick="btnAlumnos"
-                    />
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/alumnosb"/>
+
                 <Button
                     android:id="@+id/btn_docentes"
-                    android:background="@color/docentes"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/docentes"
+                    android:onClick="btnDocentes"
                     android:text="Portal Docentes"
                     android:textColor="#fff"
-                    android:onClick="btnDocentes"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/docentesb"/>
                     />
             </TableRow>
 
             <TableRow
-                android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal">
+
                 <Button
                     android:id="@+id/btn_tv_uaq"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/tv"
+                    android:onClick="btnTv"
                     android:text="TV UAQ"
                     android:textColor="#fff"
-                    android:background="@color/tv"
-                    android:onClick="btnTv"
-                    />
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/teleb"/>/>
+
                 <Button
                     android:id="@+id/btn_radio_uaq"
+                    android:backgroundTint="@color/radio"
+                    android:layout_height="50dp"
+                    android:onClick="btnRadio"
                     android:text="Radio UAQ"
                     android:textColor="#fff"
-                    android:background="@color/radio"
-                    android:onClick="btnRadio"
-                    />
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/radiob"/>/>
             </TableRow>
 
             <TableRow
-                android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal">
+
                 <Button
                     android:id="@+id/btn_facultades"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/facultades"
+                    android:onClick="btnFacultades"
                     android:text="Facultades"
                     android:textColor="#fff"
-                    android:background="@color/facultades"
-                    android:onClick="btnFacultades"
-                    />
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/facultadesb"/>/>
+
                 <Button
                     android:id="@+id/btn_acerca"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/acerca"
+                    android:onClick="btnAcerca"
                     android:text="Acerca de ..."
                     android:textColor="#fff"
-                    android:background="@color/acerca"
-                    android:onClick="btnAcerca"
-                    />
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/acercab"/>/>
             </TableRow>
 
             <TableRow
-                android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
-                android:gravity="center_horizontal"
-                android:layout_span="2">
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:gravity="center_horizontal">
+
                 <Button
                     android:id="@+id/btn_contacto"
-                    android:text="Contacto"
-                    android:textColor="#fff"
-                    android:background="@color/contacto"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
                     android:layout_weight="1"
+                    android:backgroundTint="@color/contacto"
+                    android:drawableLeft="@drawable/contactb"
+                    android:drawablePadding="-135dp"
+                    android:paddingLeft="120dp"
                     android:onClick="btnContacto"
-                    />
+                    android:text="Contacto"
+                    android:textColor="#ffff" />/>
             </TableRow>
         </TableLayout>
 
@@ -111,13 +137,13 @@
             android:src="@drawable/logo"
 
             />
+
         <ImageView
             android:id="@+id/logo2"
-            android:layout_below="@+id/logo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/logo2"
-          />
+            android:layout_below="@+id/logo"
+            android:src="@drawable/logo2" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
