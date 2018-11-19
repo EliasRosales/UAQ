@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -31,100 +30,112 @@
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal">
-
-                <Button
-                    android:id="@+id/btn_alumnos"
-                    android:layout_height="50dp"
-                    android:backgroundTint="@color/alumnos"
-                    android:onClick="btnAlumnos"
-                    android:text="Portal Alumnos"
-                    android:textColor="#fff"
-                    android:paddingLeft="10dp"
-                    android:drawableLeft="@drawable/alumnosb"/>
-
-                <Button
-                    android:id="@+id/btn_docentes"
-                    android:layout_height="50dp"
-                    android:backgroundTint="@color/docentes"
-                    android:onClick="btnDocentes"
-                    android:text="Portal Docentes"
-                    android:textColor="#fff"
-                    android:paddingLeft="10dp"
-                    android:drawableLeft="@drawable/docentesb"/>
-                    />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal">
-
-                <Button
-                    android:id="@+id/btn_tv_uaq"
-                    android:layout_height="50dp"
-                    android:backgroundTint="@color/tv"
-                    android:onClick="btnTv"
-                    android:text="TV UAQ"
-                    android:textColor="#fff"
-                    android:paddingLeft="10dp"
-                    android:drawableLeft="@drawable/teleb"/>/>
-
-                <Button
-                    android:id="@+id/btn_radio_uaq"
-                    android:backgroundTint="@color/radio"
-                    android:layout_height="50dp"
-                    android:onClick="btnRadio"
-                    android:text="Radio UAQ"
-                    android:textColor="#fff"
-                    android:paddingLeft="10dp"
-                    android:drawableLeft="@drawable/radiob"/>/>
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:baselineAligned="false"
                 android:gravity="center_horizontal">
 
                 <Button
                     android:id="@+id/btn_facultades"
                     android:layout_height="50dp"
                     android:backgroundTint="@color/facultades"
+                    android:drawableLeft="@drawable/facultadesb"
                     android:onClick="btnFacultades"
-                    android:text="Facultades"
-                    android:textColor="#fff"
                     android:paddingLeft="10dp"
-                    android:drawableLeft="@drawable/facultadesb"/>/>
+                    android:text="Facultades"
+                    android:textColor="#fff" />
 
                 <Button
-                    android:id="@+id/btn_acerca"
+                    android:id="@+id/btn_docentes"
                     android:layout_height="50dp"
-                    android:backgroundTint="@color/acerca"
-                    android:onClick="btnAcerca"
-                    android:text="Acerca de ..."
-                    android:textColor="#fff"
+                    android:backgroundTint="@color/docentes"
+                    android:drawableLeft="@drawable/docentesb"
+                    android:onClick="btnDocentes"
                     android:paddingLeft="10dp"
-                    android:drawableLeft="@drawable/acercab"/>/>
+                    android:text="Portal Docentes"
+                    android:textColor="#fff" />
+                />
             </TableRow>
 
             <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_span="2"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn_alumnos"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/alumnos"
+                    android:drawableLeft="@drawable/alumnosb"
+                    android:onClick="btnAlumnos"
+                    android:paddingLeft="10dp"
+                    android:text="Portal Alumnos"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn_tv_uaq"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/tv"
+                    android:drawableLeft="@drawable/teleb"
+                    android:onClick="btnTv"
+                    android:paddingLeft="10dp"
+                    android:text="TV UAQ"
+                    android:textColor="#fff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/btn_radio_uaq"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/radio"
+                    android:drawableLeft="@drawable/radiob"
+                    android:onClick="btnRadio"
+                    android:paddingLeft="10dp"
+                    android:text="Radio UAQ"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn_tUAQ"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:backgroundTint="@color/tUAQ"
+                    android:drawableLeft="@drawable/tuaq"
+                    android:onClick="btnTUAQ"
+                    android:paddingLeft="10dp"
+                    android:text="TRANSPORTE UAQ"
+                    android:textColor="#ffff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal">
 
                 <Button
                     android:id="@+id/btn_contacto"
                     android:layout_height="50dp"
                     android:layout_margin="1dp"
-                    android:layout_weight="1"
                     android:backgroundTint="@color/contacto"
                     android:drawableLeft="@drawable/contactb"
-                    android:drawablePadding="-135dp"
-                    android:paddingLeft="120dp"
                     android:onClick="btnContacto"
+                    android:paddingLeft="10dp"
                     android:text="Contacto"
-                    android:textColor="#ffff" />/>
+                    android:textColor="#ffff" />
+
+                <Button
+                    android:id="@+id/btn_acerca"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/acerca"
+                    android:drawableLeft="@drawable/acercab"
+                    android:onClick="btnAcerca"
+                    android:paddingLeft="10dp"
+                    android:text="Acerca de ..."
+                    android:textColor="#fff" />
+
             </TableRow>
         </TableLayout>
 

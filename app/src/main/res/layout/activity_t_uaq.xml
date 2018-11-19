@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tUAQ">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            >
+
+            <TextView
+                android:id="@+id/txtv_juriqulla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="HORARIOS JURIQUILLA"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="1dp"
+                android:background="@color/juriquilla"
+                android:textColor="#fff"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btn_juriquilla"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:backgroundTint="@color/button"
+                android:drawableLeft="@drawable/close"
+                android:layout_margin="1dp"
+                android:onClick="juriquilla"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/h_juriquilla"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_margin="1dp"
+                android:src="@drawable/img_h_juriquilla"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/iv_juriquilla"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/txtv_juriqulla"
+                android:src="@drawable/h_juriquilla"
+                android:layout_margin="1dp"
+                android:scaleType="fitXY"
+                android:onClick="imgJuriquilla"/>
+
+            <TextView
+                android:id="@+id/txtv_aereopuerto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:text="HORARIOS AEREOPUERTO"
+                android:layout_below="@id/iv_juriquilla"
+                android:layout_margin="1dp"
+                android:background="@color/aereopuerto"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/btn_aereopuerto"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:backgroundTint="@color/button"
+                android:drawableLeft="@drawable/close"
+                android:layout_margin="1dp"
+                android:onClick="aereopuerto"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/h_aereopuerto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_margin="1dp"
+                android:src="@drawable/img_h_aereopuerto"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/iv_aereopuerto"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_below="@id/txtv_aereopuerto"
+                android:src="@drawable/h_aereopuerto"
+                android:layout_margin="1dp"
+                android:scaleType="fitXY"
+                android:onClick="imgAereopuerto"/>
+
+            <TextView
+                android:id="@+id/txtv_bicentenario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="HORARIOS BICENTENARIO"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/iv_aereopuerto"
+                android:layout_margin="1dp"
+                android:background="@color/bicentenario"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/btn_bicentenario"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:backgroundTint="@color/button"
+                android:drawableLeft="@drawable/close"
+                android:layout_margin="1dp"
+                android:onClick="bicentenario"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/h_bicentenario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_margin="1dp"
+                android:src="@drawable/img_h_bicentenario"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/iv_bicentenario"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_below="@id/txtv_bicentenario"
+                android:src="@drawable/h_bicentenario"
+                android:layout_margin="1dp"
+                android:scaleType="fitXY"
+                android:onClick="imgBicentenario"/>
+
+        </RelativeLayout>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu_fab_label="Menu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:menu_colorNormal="@color/colorPrimary"
+            app:menu_colorPressed="@color/colorPrimaryDark"
+            app:menu_icon="@drawable/menub"
+            android:elevation="30dp"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/acerca"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Acerca..."
+                android:src="@drawable/acercab"
+                android:onClick="Acerca"
+                app:fab_colorNormal="@color/acerca"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/contacto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Contacto"
+                android:src="@drawable/contactb"
+                android:onClick="Contacto"
+                app:fab_colorNormal="@color/contacto"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/tuaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Transporte UAQ"
+                android:src="@drawable/tuaq"
+                android:onClick="TUAQ"
+                app:fab_colorNormal="@color/tUAQ"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/radiouaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Radio UAQ"
+                android:src="@drawable/radiob"
+                android:onClick="Ruaq"
+                app:fab_colorNormal="@color/radio"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/tvuaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="TV UAQ"
+                android:src="@drawable/teleb"
+                android:onClick="Tvuaq"
+                app:fab_colorNormal="@color/tv"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/alumnos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Portal Alumnos"
+                android:src="@drawable/alumnosb"
+                android:onClick="Alumnos"
+                app:fab_colorNormal="@color/alumnos"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/docentes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Portal Docentes"
+                android:src="@drawable/docentesb"
+                android:onClick="Docentes"
+                app:fab_colorNormal="@color/docentes"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/facultades"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Facultades"
+                android:src="@drawable/facultadesb"
+                android:onClick="Facultades"
+                app:fab_colorNormal="@color/facultades"
+                app:fab_size="mini"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

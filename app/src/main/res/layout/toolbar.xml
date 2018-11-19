@@ -2,15 +2,16 @@
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
     android:elevation="6dp"
+    android:background="@color/colorPrimary"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_marginRight="20dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
 
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/img"
@@ -28,6 +29,28 @@
             android:layout_below="@id/img"
             android:layout_centerHorizontal="true"
             android:text="" />
+
+        <Button
+            android:id="@+id/btn_calendario"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/calendarb"
+            android:onClick="calendario" />
+        <Button
+            android:id="@+id/btn_calendario_cerrar"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="calendario"
+            android:drawableLeft="@drawable/calendarb"
+            android:backgroundTint="@color/contacto"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+
 
     </RelativeLayout>
 

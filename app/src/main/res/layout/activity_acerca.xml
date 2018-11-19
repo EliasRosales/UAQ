@@ -90,52 +90,8 @@
                 app:fab_label="Acerca..."
                 android:src="@drawable/acercab"
                 android:onClick="Acerca"
-                app:fab_colorNormal="@color/acerca"/>
-
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/docentes"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Portal Docentes"
-                android:src="@drawable/docentesb"
-                android:onClick="Docentes"
-                app:fab_colorNormal="@color/docentes"/>
-
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/alumnos"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Portal Alumnos"
-                android:src="@drawable/alumnosb"
-                android:onClick="Alumnos"
-                app:fab_colorNormal="@color/alumnos"/>
-
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/radiouaq"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Radio UAQ"
-                android:src="@drawable/radiob"
-                android:onClick="Ruaq"
-                app:fab_colorNormal="@color/radio"/>
-
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/tvuaq"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="TV UAQ"
-                android:src="@drawable/teleb"
-                android:onClick="Tvuaq"
-                app:fab_colorNormal="@color/tv"/>
-
-            <com.github.clans.fab.FloatingActionButton
-                android:id="@+id/facultades"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:fab_label="Facultades"
-                android:src="@drawable/facultadesb"
-                android:onClick="Facultades"
-                app:fab_colorNormal="@color/facultades"/>
+                app:fab_colorNormal="@color/acerca"
+                app:fab_size="mini"/>
 
             <com.github.clans.fab.FloatingActionButton
                 android:id="@+id/contacto"
@@ -144,7 +100,68 @@
                 app:fab_label="Contacto"
                 android:src="@drawable/contactb"
                 android:onClick="Contacto"
-                app:fab_colorNormal="@color/contacto"/>
+                app:fab_colorNormal="@color/contacto"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/tuaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Transporte UAQ"
+                android:src="@drawable/tuaq"
+                android:onClick="TUAQ"
+                app:fab_colorNormal="@color/tUAQ"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/radiouaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Radio UAQ"
+                android:src="@drawable/radiob"
+                android:onClick="Ruaq"
+                app:fab_colorNormal="@color/radio"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/tvuaq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="TV UAQ"
+                android:src="@drawable/teleb"
+                android:onClick="Tvuaq"
+                app:fab_colorNormal="@color/tv"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/alumnos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Portal Alumnos"
+                android:src="@drawable/alumnosb"
+                android:onClick="Alumnos"
+                app:fab_colorNormal="@color/alumnos"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/docentes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Portal Docentes"
+                android:src="@drawable/docentesb"
+                android:onClick="Docentes"
+                app:fab_colorNormal="@color/docentes"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/facultades"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Facultades"
+                android:src="@drawable/facultadesb"
+                android:onClick="Facultades"
+                app:fab_colorNormal="@color/facultades"
+                app:fab_size="mini"/>
 
         </com.github.clans.fab.FloatingActionMenu>
 
